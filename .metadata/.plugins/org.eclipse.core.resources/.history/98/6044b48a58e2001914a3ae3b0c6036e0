@@ -1,0 +1,40 @@
+package outlab1;
+
+public class BubbleSort {
+	
+	
+
+	public static void sort(int[] intarray, int arrayLength) {
+		boolean ISsorted = false;
+		/**i create a while loop to keep looping**/
+		//while(!ISsorted) {
+			//System.out.println("sort check");
+			/**use for loop to go through list and switch values
+			 * as needed**/
+		for(int i = 0; i<intarray.length-1;i++) {
+			if(intarray[i+1]<intarray[i]) {
+				swich(intarray, i, i+1);
+				}
+			}
+		sort(intarray, intarray.length-1);
+		//}
+	}
+	
+    private static void swich(int[] ia, int i, int j) {
+        int swap = ia[i];
+        ia[i] = ia[j];
+        ia[j] = swap;
+        //System.out.println("swich check");
+    }
+	
+//	public static boolean sorted(int[] ia) {
+//		for (int i = 0 + 1; i < ia.length-1; i++) {
+//			if (ia[i] > ia[i-1]) {
+//				//System.out.println("sorted check");
+//				return false;
+//			}
+//		}
+//		return true;
+//	}
+	
+}

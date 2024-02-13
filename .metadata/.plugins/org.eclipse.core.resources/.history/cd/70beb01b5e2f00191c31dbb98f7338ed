@@ -1,0 +1,18 @@
+package Object_Oriented_Shapes;
+
+public class ShapeDemo {
+	
+	public static void main(String args[]) {
+		
+		Rectangle rec = new Rectangle(5, 10);
+		System.out.println("I made a Rectangle with Width: 5 and Height: 10");
+		System.out.println("The Area is: " + rec.getArea());
+		System.out.println("The perimeter is: " + rec.getPerimeter());
+		System.out.println(rec.printNumSides());
+		Square sq = new Square(5);
+		System.out.println("I made a Square with Side Length: 5");
+		System.out.println("The Area is: " + sq.getArea());
+		System.out.println("The perimeter is: " + sq.getPerimeter());
+		System.out.println(sq.printNumSides());
+	}
+}

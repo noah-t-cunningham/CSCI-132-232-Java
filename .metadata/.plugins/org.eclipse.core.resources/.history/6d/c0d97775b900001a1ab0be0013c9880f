@@ -1,0 +1,55 @@
+package outLab2;
+
+import java.lang.StringBuilder;
+
+
+public class MSUclass {
+	String title;
+	int courseID;
+	int seats;
+	int sections;
+	String days;
+	int time;
+	String location;
+	boolean lecture;
+	String[] data;
+	
+	public MSUclass(String line) {
+		data = line.split(",");
+		System.out.println(data[1]);
+		for(String point:data) {
+			System.out.println(point);
+		}
+	}
+	
+	
+	public void getKey() {
+		//return data[11]
+	}
+	
+	public void IncrementSection() {
+		
+	}
+	
+	public void addSeats() {
+		
+	}
+	
+	public boolean isLecture() {
+		while(!lecture) {
+			for(int i=0;i<data.length;i++) {
+				if(data[i].equals("Lecture")) {
+					lecture = true;
+					break;
+				}
+			}
+		}
+		return lecture;
+	}
+	
+	public String toString() {
+		StringBuilder SB = new StringBuilder();		
+		return SB.toString();
+	}
+}
+

@@ -1,0 +1,11 @@
+package Object_Oriented_Shapes;
+
+public class EquilateralTriangle extends Triange{
+	
+	public EquilateralTriangle() {}
+	
+	public EquilateralTriangle(double Side) {
+		super.Base = Side;
+		super.Height = Side;
+	}
+}

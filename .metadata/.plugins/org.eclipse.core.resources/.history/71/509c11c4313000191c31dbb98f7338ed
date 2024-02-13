@@ -1,0 +1,6 @@
+package Object_Oriented_Shapes;
+
+public class EquilateralTriangle extends Traingle{
+	
+	public EquilateralTriangle()
+}

@@ -1,0 +1,37 @@
+package outlab1;
+
+import java.util.Random;
+import java.util.Arrays;
+
+public class Demo {
+public static void main(String[] args) {
+	
+System.out.println("hi");
+	
+	/**instantiate variables i need**/
+	BubbleSort BS = new BubbleSort();
+	CocktailSort CS = new CocktailSort();
+	RadixSort RS = new RadixSort();
+	Random rando = new Random();
+	int[] Array = new int[100000];
+	int[] BubbleArray = new int[100000];
+	int[] CocktailArray = new int[100000];
+	int[] RadixArray = new int[100000];
+	/**create array with random generated numbers**/
+	for(int i = 0;i<100000; i++) {
+		Array[i]=rando.nextInt(500000-1+1)+1;
+		}
+	/**Copy random array to 3 other arrays**/
+//	for(int i = 0;i<100000; i++) {
+//		BubbleArray[i]=Array[i];
+//		CocktailArray[i]=Array[i];
+//		RadixArray[i]=Array[i];
+//		System.out.println(Array[i]);
+//		System.out.println(BubbleArray[i]);
+//		}
+	int[] ta = {9,2,3,6,5,8,1,4,7};
+	BS.sort(ta);
+	System.out.println(Arrays.toString(ta));
+	System.out.println("by");
+	}
+}

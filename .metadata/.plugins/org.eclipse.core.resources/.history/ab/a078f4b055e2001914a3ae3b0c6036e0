@@ -1,0 +1,35 @@
+package outlab1;
+
+public class BubbleSort {
+
+	public static void sort(int[] intarray) {
+		boolean sorted=false;
+		
+		while(sorted==false) {
+		for(int i = 0; i<intarray.length-1;i++) {
+			if(intarray[i+1]<intarray[i]) {
+				swich(intarray, i, i+1);
+				}
+			if(!sorted(intarray)) {
+				
+				}
+			}
+		}
+	}
+	
+    private static void swich(int[] ia, int i, int j) {
+        int swap = ia[i];
+        ia[i] = ia[j];
+        ia[j] = swap;
+    }
+	
+	public boolean sorted(int[] ia) {
+		for (int i = 0 + 1; i < ia.length-1; i++) {
+			if (ia[i] > ia[i-1]) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
+}

@@ -1,0 +1,13 @@
+package Object_Oriented_Shapes;
+
+public class Circle implements Shape {
+	private double perm;
+	private double area;
+	private String sides;
+	
+	public Circle(double P, double A, String S) {
+		perm = P;
+		area = A;
+		sides = S;
+	}
+}
